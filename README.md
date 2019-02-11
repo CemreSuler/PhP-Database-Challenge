@@ -1,30 +1,64 @@
+# Nakijk tips
+Voor deze opdracht was het de bedoeling om een app te maken en daaraan een 
+database te koppelen (dus een frontend en backend). 
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Deze app moest de volgende dingen kunnen doen met de database:
+1. Read (lezen)
+2. Create (creëren)
+3. Write (schrijven)
+4. Delete (verwijderen)
 
+Wij hebben de opdracht gemaakt met de database (over vliegtuigvluchten) die 
+Cemre voor zijn vorige challenge heeft gemaakt. Hieraan hebben wij de 
+functionaliteit om een account te maken toegevoegd. Dit hebben we gedaan, omdat
+het eigenlijk wel hoort bij de database en omdat het alle bovenstaande vereiste 
+combineert. Laten we gaan kijken naar de verwerking
 
-Hi there! Welcome to Cloud9 IDE!
+    > De functies zijn voornamelijk met Google Chrome getest. De app 
+    kan dus minder functioneren met een andere browser
+    
+    > (edit van Cemre Süler op 09/02/2019: Het werkt nu op elke browser, ik heb 
+    wat meer javascript gebruikt (zie error_messages.js))
+    
+## Read (lezen)
+De read functionaliteit kunt u op meerdere plekken terugvinden. Op de vluchten
+pagina kunt u doormiddel van een form zoeken op vertrekken en aankomsten van vluchten. 
 
-To get you started, we have created a small hello world application.
+Op je persoonlijke pagina kun je ook je eigen gegevens bekijken (dit kan alleen
+nadat u een account heeft gemaakt).
 
-1) Open the hello-world.php file
+## Create (creëren)
+Het aanmaken van een account bevat de create functie. Voor het maken van een 
+account klikt u op account in het menu, vervolgens klikt u op registreer. Dan 
+kunt u een account aanmaken door de benodigde gegevens in te vullen.
 
-2) Follow the run instructions in the file's comments
+Bij het invullen checkt het systeem of de invoer correct is. Als dit niet zo is,
+dan wordt er een error gegeven. 
 
-3) If you want to look at the Apache logs, check out ~/lib/apache2/log
+## Write (schrijven)
+Nadat u een account heeft aangemaakt, kunt u inloggen en dan komt u op uw 
+persoonlijke pagina met de gegevens die van u bekend zijn. Onderaan kunt u op de
+knop **bewerk je gegevens** klikken en dan kunt u uw gegevens bewerken.
 
-And that's all there is to it! Just have fun. Go ahead and edit the code, 
-or add new files. It's all up to you! 
+## Delete (verwijderen)
+Als laatste kunt u ook nog uw account verwijderen. Dit kan door weer op de 
+**bewerk je gegevens** knop te klikken. Op de pagina waarop u dan terecht komt 
+kunt u dan op **verwijder account** klikken. Uw zult dan een pop-up krijgen die
+vraagt om uw bevestiging. Als u dan op **Ok** klikt dan is uw account met alle 
+gegevens verwijderd. 
 
-Happy coding!
-The Cloud9 IDE team
+## Gegevens beheren (admin)
+Als administrator wilt u natuurlijk alle gegevens kunnen beheren, dit kan als 
+u inlogd met de gebruikersnaam "Admin" en het wachtwoord "Admin". U wordt dan
+doorgeleid naar de administratorpagina, waar u alle gegevens van alle gebruikers
+kan bewerken of verwijderen.
 
+## Extra's
+Naast de bovengenoemde vereiste zijn er ook nog extra's aanwezig. 
 
-## Support & Documentation
+### Contact form
+De website beschikt over een contact form, dit form kunnen de gebruikers 
+invullen zodat er een mail naar ons wordt gestuurd, waarop wij vervolgens kunnen
+reageren. 
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+    > De mail wordt alleen verzonden als de php op een server gerund wordt.
