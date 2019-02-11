@@ -1,4 +1,8 @@
-# Nakijk tips
+## Het starten van de web-app
+U kunt de app starten door bovenin op **Run Project** te drukken en daarna naar [de app](https://phpdatabase-cemre2002.c9users.io/) te gaan
+
+
+# Nakijk instructies
 Voor deze opdracht was het de bedoeling om een app te maken en daaraan een 
 database te koppelen (dus een frontend en backend). 
 
